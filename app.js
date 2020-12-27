@@ -35,7 +35,7 @@ app.post("/", function (req, res) {
   const url = "https://us17.api.mailchimp.com/3.0/lists/5d3bddd540"
   const options = {
       method: "POST",
-      auth: "isra:fdc278a7395ad085413e7438febe1653-us17"
+      auth: "isra:f85ded6cc24bd29a602efacb7cebd974-us17"
   }
 
   const request = https.request(url, options, function(response) {
@@ -64,9 +64,3 @@ app.post("/failure", function(req, res){
 app.listen(process.env.PORT || 3000, function() {
     console.log("Server is up and running");
 });
-
-// API Key 
-// fdc278a7395ad085413e7438febe1653-us17
-
-// List ID
-// 5d3bddd540
