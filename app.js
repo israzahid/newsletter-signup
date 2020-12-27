@@ -32,10 +32,10 @@ app.post("/", function (req, res) {
 
   const jsonData = JSON.stringify(data);
 
-  const url = "https://us17.api.mailchimp.com/3.0/lists/5d3bddd540"
+  const url = "https://us17.api.mailchimp.com/3.0/lists/*" // LIST ID HERE
   const options = {
       method: "POST",
-      auth: "isra:fdc278a7395ad085413e7438febe1653-us17"
+      auth: //API KEY HERE
   }
 
   const request = https.request(url, options, function(response) {
@@ -64,9 +64,3 @@ app.post("/failure", function(req, res){
 app.listen(process.env.PORT || 3000, function() {
     console.log("Server is up and running");
 });
-
-// API Key 
-// fdc278a7395ad085413e7438febe1653-us17
-
-// List ID
-// 5d3bddd540
